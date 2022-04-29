@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="user" authorOS="Windows 10" createdAt="1606654925695" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="Astoria RP" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1651077800946">
+<project author="user" authorOS="Windows 10" createdAt="1606654925695" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="SMASH RP" packageName="app" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1651077800946">
   <tree>
     <expanded>
     <path src=""/>
