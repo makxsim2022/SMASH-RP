@@ -1,6 +1,6 @@
-<project name="Astoria RP" basedir=".">
+<project name="SMASH RP" basedir=".">
     <!-- set global properties for this build -->
-    <property name="name" location="Astoria RP"/>
+    <property name="name" location="SMASH RP"/>
     <property name="build" location="build"/>
     <property name="dist" location="build/dist"/>
     <property name="launch4j.dir" location="F:\DevelNext1\tools\Launch4j" />
@@ -39,7 +39,7 @@
     </target>
 
     <target name="onejar" depends="dist">
-        <jar destfile="${dist}/Astoria RP.jar" duplicate="preserve" level="7" encoding="UTF-8">
+        <jar destfile="${dist}/SMASH RP.jar" duplicate="preserve" level="7" encoding="UTF-8">
             <fileset dir="${dist}/gen" />
             <zipfileset src="${dist}/lib/dn-compiled-module.jar" />
             <zipfileset src='${dist}/lib/asm-all.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-core.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-runtime.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/dn-php-sdk.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/gson.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-json-ext.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-xml-ext.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-gui-ext.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-desktop-ext.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-zend-ext.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-app-framework.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/HikariCP-java6.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/javassist-GA.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-sql-ext.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/slf4j-api.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/antlr4-runtime.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/connector-api.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jaybird-jdk18.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jna.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/jphp-zip-ext.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/slf4j-simple.jar' excludes='JPHP-INF/sdk/** **/*.php' /> <zipfileset src='${dist}/lib/zt-zip.jar' excludes='JPHP-INF/sdk/** **/*.php' />
@@ -66,18 +66,18 @@
 
     <target name="launch4j">
         <launch4j>
-            <config headerType="gui" outfile="${dist}/Astoria RP.exe"
-                    dontWrapJar="true" jarPath="" chdir="."
-                    downloadUrl="http://java.com/download" icon="C:\Users\2BA0~1\AppData\Local\Temp\1a7db244-d34a-472c-960b-fd9a81a9c90c2488511297267222863.ico">
+            <config headerType="gui" outfile="${dist}/SMASH RP.exe"
+                    dontWrapJar="false" jarPath="${dist}/SMASH RP.jar" chdir="."
+                    downloadUrl="http://java.com/download" icon="C:\Users\2BA0~1\AppData\Local\Temp\f981001e-1fe9-44f7-b07d-88fe350adeba1373196226080342676.ico">
                 <classPath mainClass="org.develnext.jphp.ext.javafx.FXLauncher">
                     <cp>lib/*</cp>
                 </classPath>
-                <jre minVersion="1.8.0" path="" runtimeBits="64/32">
+                <jre minVersion="1.8.0" path="jre" runtimeBits="64/32">
                     <opt>-Dfile.encoding=UTF-8</opt>
                 </jre>
             </config>
         </launch4j>
-        <delete file="" failonerror="false" />
+        <delete file="${dist}/SMASH RP.jar" failonerror="false" />
         <delete dir="${dist}/gen" failonerror="false" />
     </target>
 </project>
