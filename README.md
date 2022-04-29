@@ -1,1 +1,1 @@
-# SMASH-RP
+# Astoria
